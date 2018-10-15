@@ -17,11 +17,11 @@ class App extends Component {
         <BrowserRouter>
           <div className="App">
             <Navbar />
-            <Switch>
-              <Redirect exact path="/" to="/movies" />
-              <Route exact path="/movies" component={Movies} />
-              <Route exact path="/series" component={Series} />
-            </Switch>
+
+            <Redirect exact path="/" to="/movies" />
+            <Route exact path="/movies" component={Movies} />
+            <Route exact path="/series" component={Series} />
+
           </div>
         </BrowserRouter>
       </Provider>

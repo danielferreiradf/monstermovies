@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import "latte-carousel/dist/latte-carousel.min.css";
 import { LatteCarousel, LatteItem } from 'react-latte-carousel';
 import MoviesCard from './MoviesCard';
 
-const MoviesCarousel = ({ data }) => {
+const MoviesCarousel = ({ data, title }) => {
     const moviesList = data.map(movie => {
         return (
             <LatteItem key={movie.id}>
                 <div>
-                    <MoviesCard title={movie.title} poster={movie.poster_path} release={movie.release_date} score={movie.vote_average} />
+                    <MoviesCard id={movie.id} title={movie.title} poster={movie.poster_path} release={movie.release_date} score={movie.vote_average} />
                 </div>
             </LatteItem>
         )
@@ -33,6 +33,7 @@ const MoviesCarousel = ({ data }) => {
 
     return (
         <div className="">
+            <h1 className="heading-3 p-10"><i className="fa fa-film" /> {title}</h1>
             <LatteCarousel options={options}>
                 {moviesList}
             </LatteCarousel>

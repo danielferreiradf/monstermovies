@@ -3,4 +3,14 @@
     .navbar__menu-item-link {
         padding: 5px 5px !important;
     }
+    
+}
+
+@media (max-width: 600px) {
+    .col-6 {
+        width: 100%;
+        justify-content: center;
+        margin: 0 10px;
+    }
+    
 }

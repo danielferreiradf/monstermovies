@@ -1,0 +1,36 @@
+.moviesitempage {
+    margin-top: 50px;
+    min-height: 70vh;
+
+    &__image {
+        width: 100%;
+        max-width: 300px;
+        height: 100%;
+        max-height: 450px;
+        text-align: right;
+    }
+    &__title {
+        color: white;
+        font-size: 4rem;
+        font-weight: 400;
+    }
+    &__subtitle {
+        color: white;
+        font-size: 1.7rem;
+        margin: 15px 0;
+    }
+    &__overview {
+        color: white;
+        font-size: 2.2rem;
+        margin: 30px 0;
+        font-weight: 200;
+    }
+    &__score {
+    color: yellow;
+    font-size: 1.7rem;
+    }
+
+    & span {
+        color: lighten($grey-3, 25%);
+    }
+}

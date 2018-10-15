@@ -5,8 +5,10 @@ import { Provider } from 'react-redux';
 import store from './store';
 
 import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
 import Movies from './components/movies/Movies';
 import Series from './components/series/Series';
+import MoviesItem from './components/movies/MoviesItem';
 
 import './styles/main.scss'; //SASS MAIN FILE
 import '../node_modules/font-awesome/css/font-awesome.min.css';
@@ -21,8 +23,10 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Movies} />
               <Route exact path="/movies" component={Movies} />
+              <Route exact path="/movies/:id" component={MoviesItem} />
               <Route exact path="/series" component={Series} />
             </Switch>
+            <Footer />
           </div>
         </BrowserRouter>
       </Provider>

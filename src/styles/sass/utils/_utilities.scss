@@ -10,11 +10,17 @@
     padding: 0 20px;
 }
 .d-flex {
-    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 .mt-30 {
     margin-top: 30px;
 }
 .mb-20 {
     margin-bottom: 20px;
+}
+
+.text-white {
+    color: white;
 }

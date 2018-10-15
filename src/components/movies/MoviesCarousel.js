@@ -7,7 +7,7 @@ const MoviesCarousel = ({ data }) => {
     const moviesList = data.map(movie => {
         return (
             <LatteItem key={movie.id}>
-                <div className="d-flex">
+                <div>
                     <MoviesCard title={movie.title} poster={movie.poster_path} release={movie.release_date} score={movie.vote_average} />
                 </div>
             </LatteItem>
@@ -23,10 +23,10 @@ const MoviesCarousel = ({ data }) => {
         autoplay: 0,
         animation: 500,
         responsive: {
-            "0": { count: 2, buttons: false, },
-            "480": { count: 2, buttons: false, },
-            "768": { count: 4, },
-            "1440": { count: 5, },
+            "0": { count: 2.2, buttons: false, },
+            "480": { count: 2.2, buttons: false, },
+            "768": { count: 4.2, },
+            "1440": { count: 5.2, },
         },
     }
 

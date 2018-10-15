@@ -2,7 +2,7 @@
   "name": "monstermovies",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://danielferreiradf.github.io/monstermovies/monstermovies",
+  "homepage": "http://danielferreiradf.github.io/monstermovies/",
   "dependencies": {
     "axios": "^0.18.0",
     "font-awesome": "^4.7.0",
@@ -18,7 +18,11 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "scripts": {
+      "start": "node index.js",
+      "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    }
+    "start2": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

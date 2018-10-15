@@ -6,7 +6,6 @@ class Movies extends Component {
     render() {
         return (
             <Fragment>
-                <MoviesHeader />
                 <MoviesSection />
             </Fragment>
         )

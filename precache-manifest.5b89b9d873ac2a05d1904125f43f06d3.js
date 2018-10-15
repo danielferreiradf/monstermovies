@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "4d1b851ce5494db3538e591a88369282",
-    "url": "/monstermovies/static/media/bgseries.4d1b851c.jpg"
+    "revision": "339048d6c7c594ba88e16c2e6287c86d",
+    "url": "/monstermovies/static/media/bgmovies.339048d6.jpg"
   },
   {
     "revision": "82200183d9abe5d72c00",
@@ -32,16 +32,12 @@ self.__precacheManifest = [
     "url": "/monstermovies/static/js/main.82200183.chunk.js"
   },
   {
-    "revision": "339048d6c7c594ba88e16c2e6287c86d",
-    "url": "/monstermovies/static/media/bgmovies.339048d6.jpg"
+    "revision": "4d1b851ce5494db3538e591a88369282",
+    "url": "/monstermovies/static/media/bgseries.4d1b851c.jpg"
   },
   {
     "revision": "af7ae505a9eed503f8b8e6982036873e",
     "url": "/monstermovies/static/media/fontawesome-webfont.af7ae505.woff2"
-  },
-  {
-    "revision": "fee66e712a8a08eef5805a46892932ad",
-    "url": "/monstermovies/static/media/fontawesome-webfont.fee66e71.woff"
   },
   {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
@@ -52,11 +48,15 @@ self.__precacheManifest = [
     "url": "/monstermovies/static/media/fontawesome-webfont.b06871f2.ttf"
   },
   {
+    "revision": "fee66e712a8a08eef5805a46892932ad",
+    "url": "/monstermovies/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  {
     "revision": "a8fe80dba66df28c675d",
     "url": "/monstermovies/static/css/1.5f75551d.chunk.css"
   },
   {
-    "revision": "24e99c7c992099e5df2aea447b408c0c",
+    "revision": "6d709110b0c2aa4f61555d3f1bfd6b59",
     "url": "/monstermovies/index.html"
   }
 ];

@@ -1,0 +1,22 @@
+.heading-1 {
+    color: rgb(255, 255, 255);
+    font-size: 5rem;
+    margin: 20px 0 10px 0;
+}
+.heading-2 {
+    color: rgba(163, 163, 163, 1);
+    display: inline-block;
+    font-size: 2.5rem;
+    // text-align: center;
+    margin: 20px 20px 15px 0;
+    transition: 0.3s all;    
+    &:hover {
+        transform: translatex(2px);
+    }
+}
+.heading-3 {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    margin: 40px 0 10px 0;
+    background: rgba(231, 231, 231, 0.05);
+}

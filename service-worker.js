@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/monstermovies/precache-manifest.9039a4ab649b6aa069091e1618fc8c92.js"
+  "/monstermovies/monstermovies/precache-manifest.779a6e60e42dfde9b2ec687c4fd38f03.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/monstermovies/index.html", {
+workbox.routing.registerNavigationRoute("/monstermovies/monstermovies/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

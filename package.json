@@ -18,12 +18,10 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "npm run build && node server.js",
-    "dev": "react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm install && npm run build"
+    "eject": "react-scripts eject"
   },
   "browserslist": [
     ">0.2%",

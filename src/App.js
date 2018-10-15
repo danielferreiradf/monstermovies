@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import { Provider } from 'react-redux';
 import store from './store';
@@ -10,6 +10,7 @@ import Series from './components/series/Series';
 
 import './styles/main.scss'; //SASS MAIN FILE
 import '../node_modules/font-awesome/css/font-awesome.min.css';
+
 class App extends Component {
   render() {
     return (
@@ -17,11 +18,11 @@ class App extends Component {
         <BrowserRouter>
           <div className="App">
             <Navbar />
-            <Switch>
+            <div>
               <Route exact path="/" component={Movies} />
               <Route exact path="/movies" component={Movies} />
               <Route exact path="/series" component={Series} />
-            </Switch>
+            </div>
           </div>
         </BrowserRouter>
       </Provider>

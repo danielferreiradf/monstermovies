@@ -1,8 +1,9 @@
 import React from 'react';
 
-const MoviesItemPage = (props) => {
-    const { adult, title, poster_path, original_language, overview, release_date, vote_average, popularity } = props.data
+const SeriesItemPage = (props) => {
+    const { adult, name, poster_path, original_language, overview, first_air_date, vote_average, popularity } = props.data
 
+    console.log(props)
     return (
         <div className="container">
             <div className="d-flex moviesitempage">
@@ -10,8 +11,8 @@ const MoviesItemPage = (props) => {
                     <img src={`https://image.tmdb.org/t/p/w500/${poster_path}`} alt="Poster" className="moviesitempage__image" />
                 </div>
                 <div className="col-6 p-10">
-                    <h1 className="moviesitempage__title">{title}</h1>
-                    <p className="moviesitempage__subtitle"><span>Release Date:</span> {release_date}</p>
+                    <h1 className="moviesitempage__title">{name}</h1>
+                    <p className="moviesitempage__subtitle"><span>First Air Date:</span> {first_air_date}</p>
                     <p className="moviesitempage__score"><i className="fa fa-star" /> {vote_average}</p>
                     <p className="moviesitempage__overview">{overview}</p>
                     <p className="moviesitempage__subtitle"><span>Popularity:</span> {popularity}</p>
@@ -23,4 +24,4 @@ const MoviesItemPage = (props) => {
     )
 }
 
-export default MoviesItemPage;
+export default SeriesItemPage

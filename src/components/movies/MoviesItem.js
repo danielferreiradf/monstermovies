@@ -46,7 +46,7 @@ export class MovieItem extends Component {
         )
     }
 }
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state) => {
     return {
         nowPlayingMovies: state.movies.nowPlayingMovies,
         popularMovies: state.movies.popularMovies,

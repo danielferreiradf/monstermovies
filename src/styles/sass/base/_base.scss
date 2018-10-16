@@ -1,5 +1,9 @@
 body {
-    background: $bg-gradient no-repeat;
+    height: 100vh;
+    // background: $bg-gradient no-repeat;
+    background: url(../img/bg.jpg);
+    background-size: auto;
+    background-position: center;
     font-family: 'Yantramanav', sans-serif !important;
 }
 

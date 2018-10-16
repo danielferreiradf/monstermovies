@@ -3,7 +3,7 @@ import { GET_NOW_PLAYING_MOVIES, GET_POPULAR_MOVIES, GET_UPCOMING_MOVIES, GET_TO
 
 // Get Now Playing Movies
 export const getNowPlayingMovies = () => dispatch => {
-    axios.get(`https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.REACT_APP_MOVIES_KEY}&language=en-US&page=1`)
+    axios.get(`https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.REACT_APP_MOVIES_KEY}&language=${process.env.REACT_APP_LANGUAGE}&page=1`)
         .then(res =>
             dispatch({
                 type: GET_NOW_PLAYING_MOVIES,
@@ -13,7 +13,7 @@ export const getNowPlayingMovies = () => dispatch => {
 }
 // Get Popular Movies
 export const getPopularMovies = () => dispatch => {
-    axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_MOVIES_KEY}&language=en-US&page=1`)
+    axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_MOVIES_KEY}&language=${process.env.REACT_APP_LANGUAGE}&page=1`)
         .then(res =>
             dispatch({
                 type: GET_POPULAR_MOVIES,
@@ -23,7 +23,7 @@ export const getPopularMovies = () => dispatch => {
 }
 // Get Upcoming Movies
 export const getUpcomingMovies = () => dispatch => {
-    axios.get(`https://api.themoviedb.org/3/movie/upcoming?api_key=${process.env.REACT_APP_MOVIES_KEY}&language=en-US&page=1`)
+    axios.get(`https://api.themoviedb.org/3/movie/upcoming?api_key=${process.env.REACT_APP_MOVIES_KEY}&language=${process.env.REACT_APP_LANGUAGE}&page=1`)
         .then(res =>
             dispatch({
                 type: GET_UPCOMING_MOVIES,
@@ -33,7 +33,7 @@ export const getUpcomingMovies = () => dispatch => {
 }
 // Get Top Rated Movies
 export const getTopRatedMovies = () => dispatch => {
-    axios.get(`https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.REACT_APP_MOVIES_KEY}&language=en-US&page=1`)
+    axios.get(`https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.REACT_APP_MOVIES_KEY}&language=${process.env.REACT_APP_LANGUAGE}&page=1`)
         .then(res =>
             dispatch({
                 type: GET_TOP_RATED_MOVIES,

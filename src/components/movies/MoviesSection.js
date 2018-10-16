@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getNowPlayingMovies, getPopularMovies, getTopRatedMovies, getUpcomingMovies } from '../../actions/moviesActions';
-import MoviesCarousel from './MoviesCarousel';
+import Carousel from '../common/Carousel';
 
 export class MoviesSection extends Component {
     componentDidMount() {
@@ -17,10 +17,10 @@ export class MoviesSection extends Component {
         return (
             <div className="moviessection">
                 <div className="container">
-                    <MoviesCarousel data={this.props.nowPlayingMovies} title="Now Playing" />
-                    <MoviesCarousel data={this.props.popularMovies} title="Popular" />
-                    <MoviesCarousel data={this.props.topRatedMovies} title="Top Rated" />
-                    <MoviesCarousel data={this.props.upcomingMovies} title="Upcoming" />
+                    <Carousel data={this.props.nowPlayingMovies} link="movies" title="Now Playing" />
+                    <Carousel data={this.props.popularMovies} title="Popular" link="movies" />
+                    <Carousel data={this.props.topRatedMovies} title="Top Rated" link="movies" />
+                    <Carousel data={this.props.upcomingMovies} title="Upcoming" link="movies" />
                 </div>
             </div>
         )

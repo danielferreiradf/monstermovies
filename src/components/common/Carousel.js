@@ -21,7 +21,7 @@ const Carousel = ({ data, title, link }) => {
         // dots: true,
         rewind: true,
         autoplay: 0,
-        animation: 500,
+        animation: 300,
         responsive: {
             "0": { count: 2.2, buttons: false, },
             "480": { count: 2.2, buttons: false, },

@@ -1,7 +1,11 @@
 .moviescard {
     // min-height: 500px;
-
+    transition: 0.2s all;
     
+        &:hover {
+            transform: scale(1.05);    
+    
+        }
     &__content {
     }
     
@@ -9,6 +13,8 @@
         width: 100%;
         height: 100%;
         margin: 0 10px;
+
+
     }
 
     &__title {

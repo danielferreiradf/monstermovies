@@ -1,9 +1,11 @@
 import React from 'react';
 import "latte-carousel/dist/latte-carousel.min.css";
 import { LatteCarousel, LatteItem } from 'react-latte-carousel';
+import Loading from './Loading';
 import Card from './Card';
 
 const Carousel = ({ data, title, link }) => {
+
     const moviesList = data.map(movie => {
         return (
             <LatteItem key={movie.id}>

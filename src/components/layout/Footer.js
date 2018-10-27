@@ -8,7 +8,7 @@ const Footer = () => {
                 Developed by Daniel Ferreira - {date}
             </h1>
             <div className="footer__social">
-                <a href="https://twitter.com/danieldankdf" target="blank">
+                <a href="https://twitter.com/danferreiradfs" target="blank">
                     <h1 className="footer__title-icon">
                         <i className="fa fa-twitter icon" />
                     </h1>

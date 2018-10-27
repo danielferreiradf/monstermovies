@@ -10,27 +10,27 @@
         text-align: right;
     }
     &__title {
-        color: white;
+        color: $purple-2;
         font-size: 4rem;
         font-weight: 400;
     }
     &__subtitle {
-        color: white;
+        color: $purple-1;
         font-size: 1.7rem;
         margin: 15px 0;
     }
     &__overview {
-        color: white;
+        color: $purple-2;
         font-size: 2.2rem;
         margin: 30px 0;
         font-weight: 200;
     }
     &__score {
-    color: yellow;
-    font-size: 1.7rem;
+    color: rgb(255, 255, 0);
+    font-size: 1.8rem;
     }
 
     & span {
-        color: lighten($grey-3, 25%);
+        color: lighten($black-1, 25%);
     }
 }

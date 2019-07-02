@@ -25,7 +25,7 @@ TV Shows:
 - Font Awesome
 - React
 - Redux
-- Musixmatch Public API
+- The Movies Database API
 
 Created using [create-react-app](https://github.com/facebook/create-react-app)
 
